@@ -10,6 +10,7 @@ flowchart TD
     FE --> |Calls| WC[Web3 Connection]
     
     subgraph SmartContracts[Smart Contracts Layer]
+        direction TB
         SV[StablecoinVault]
         VS[VotingSystem]
         PE[ProposalExecutor]
@@ -28,6 +29,7 @@ flowchart TD
     TA --> |Execute Actions| ExtC[External Contracts]
     
     subgraph OffChain[Off-chain Services]
+        direction TB
         SG[Subgraph Indexer]
         AS[Analytics Service]
         NS[Notification Service]
@@ -43,17 +45,20 @@ flowchart TD
     NS --> |Push Updates| FE
     AS --> |Display Analytics| FE
     
-    style SmartContracts fill:#f9f,stroke:#333,stroke-width:4px
-    style OffChain fill:#bbf,stroke:#333,stroke-width:4px
-    style SV fill:#d742f5,stroke:#333,stroke-width:2px,color:#fff
-    style VS fill:#d742f5,stroke:#333,stroke-width:2px,color:#fff
-    style PE fill:#d742f5,stroke:#333,stroke-width:2px,color:#fff
-    style DR fill:#d742f5,stroke:#333,stroke-width:2px,color:#fff
-    style TA fill:#d742f5,stroke:#333,stroke-width:2px,color:#fff
-    style ExtC fill:#5c7aff,stroke:#333,stroke-width:2px,color:#fff
-    style SG fill:#2a9d8f,stroke:#333,stroke-width:2px,color:#fff
-    style AS fill:#2a9d8f,stroke:#333,stroke-width:2px,color:#fff
-    style NS fill:#2a9d8f,stroke:#333,stroke-width:2px,color:#fff
+    style SmartContracts fill:#f5f0ff,stroke:#333,stroke-width:2px
+    style OffChain fill:#f0f8ff,stroke:#333,stroke-width:2px
+    style SV fill:#7c3aed,stroke:#333,stroke-width:2px,color:#fff
+    style VS fill:#7c3aed,stroke:#333,stroke-width:2px,color:#fff
+    style PE fill:#7c3aed,stroke:#333,stroke-width:2px,color:#fff
+    style DR fill:#7c3aed,stroke:#333,stroke-width:2px,color:#fff
+    style TA fill:#7c3aed,stroke:#333,stroke-width:2px,color:#fff
+    style ExtC fill:#3b82f6,stroke:#333,stroke-width:2px,color:#fff
+    style SG fill:#059669,stroke:#333,stroke-width:2px,color:#fff
+    style AS fill:#059669,stroke:#333,stroke-width:2px,color:#fff
+    style NS fill:#059669,stroke:#333,stroke-width:2px,color:#fff
+    style User fill:#f97316,stroke:#333,stroke-width:2px,color:#fff
+    style FE fill:#f97316,stroke:#333,stroke-width:2px,color:#fff
+    style WC fill:#f97316,stroke:#333,stroke-width:2px,color:#fff
 ```
 
 ## Project Structure
@@ -88,7 +93,7 @@ haikou/
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/haikou.git
+git clone https://github.com/kaka21garuda/haikou.git
 
 # Install dependencies
 cd haikou
